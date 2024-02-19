@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    padding: 10px;
+    z-index: 3;
+    top: 0;
+
+}
+header img{
+    height: 80px;
+    border-radius: 25%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+
+}
+.menu li {
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    padding: 12px;
+    text-align: center;
+
+}
+.menu li:hover{
+    margin-left: 1em;
+    font-size: 1.5em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color:rgba(93, 91, 93, 0.91);
+    border-radius: 5px;
+    padding: 8px;
+    color: aliceblue;
+
+}
+.menu li a{
+    color: aliceblue;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+
+
+}
+#inicio{
+    height: 100%;
+    width: 70%;
+}
+
+.container h1{
+    margin-top: 1em;
+    font-size: 2em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 3em;
+    text-align: center;
+}
+.container p{
+    text-align: center;
+    margin-bottom: 4em;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    
+    font-size: 1.5em;
+}
+.paregrafos{ display: block;
+    color: rgba(0, 0, 0, 0.0);}
+table{
+    width: 80%;
+    margin: 0 auto;
+    border: 0.2em solid black;
+    border-radius: 1em;
+}
+thead{
+    
+    align-items: center;
+
+
+}
+th{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding: 1.1em;
+
+}
+td{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    padding: 0.6em;
+    font-size: 1.4em;
+}
+form{
+
+    align-items: center;
+    width: 100%;
+
+}
+form h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 1em;
+}
+
+
+form input{
+    font-size: 24px;
+    display: block;
+    margin:10px auto ;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-family: "Chakra Petch", sans-serif;
+    width: 39%;
+}
+form button{
+    font-size: 24px;
+    display: block;
+    margin:0 auto ;
+    width: 12.3em;
+    align-items: center;
+    padding: 0.6em;
+    border-radius: 0.5em;
+    background-color: rgb(52, 53, 51);
+    color: azure;
+    font-family:"Chakra Petch", sans-serif ;
+    font-weight: bolder;
+    cursor: pointer;
+    width: ;
+
+}
+form button:hover{
+    background-color: azure;
+    color: black;
+    width: 39%;
+}
+.ageok{
+    background-color: rgba(168, 240, 109, 0.342);
+    width: 39%;
+    margin: 0 auto;
+    margin-top: 2em;
+    align-items: center;
+    padding: 2px;
+    border-radius:0.5em ;
+    border: 3px solid green;
+    display: none;
+}
+.nomeErro{
+    background-color: rgba(194, 28, 28, 0.596);
+    font-size: 10px;
+    width: 39%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2px;
+    border-radius:0.5em ;
+    border: 3px solid rgb(128, 0, 0);
+    display: none;
+}
+
+@media (max-width:800px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        border-radius: 15px;
+        position: fixed;
+        top: 0;
+        justify-content: space-between;
+
+    }
+    .menu{
+        display: list-item;
+        font-size: 1em;
+
+    }
+    .menu li ,a{
+        color: rgb(247, 241, 241);
+        text-align: center;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .container{
+    display:list-item;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 70%;
+    margin: 0px auto;
+    position: relative;
+    }
+    .container section{
+        margin: 200px auto;
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 50px;
+        align-items: center;
+        position: relative;
+    }
+    .paregrafos{
+        display: block;
+    
+    }
+
+    table{
+        width: 80%;
+        margin-top: 39em;
+        border: 0.2em solid black;
+        border-radius: 1em;
+
+    }
+    form{
+        display: list-item;
+        align-items: center;
+        width: 100%;
+        margin-top: 39em;
+
+    }
+    form input{
+        width: 71%;
+    }
+    .ageok{
+        background-color: rgba(168, 240, 109, 0.342);
+        width: 71%;
+        margin: 0 auto;
+        margin-top: 2em;
+        align-items: center;
+        padding: 2px;
+        border-radius:0.5em ;
+        border: 3px solid green;
+        display: none;
+    }
+    .nomeErro{
+        background-color: rgba(194, 28, 28, 0.596);
+        font-size: 10px;
+        width: 71%;
+        margin: 0 auto;
+        align-items: center;
+        padding: 2px;
+        border-radius:0.5em ;
+        border: 3px solid rgb(128, 0, 0);
+        display: none;
+    }
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-family:"Chakra Petch", sans-serif ;
+    font-weight: 400;
+    padding: 1em;
+    color: aliceblue;
+    text-shadow: 5px 5px  black;
+    margin-top: 100px;
+    width: 100%;
+    bottom: -0;
+    position: fixed;
+    
+}
