@@ -255,7 +255,7 @@ form button:hover{
         align-items: center;
         width: 100%;
         margin-top: 39em;
-
+        position: relative;
     }
     form input{
         width: 71%;
@@ -296,4 +296,10 @@ footer{
     bottom: -0;
     position: fixed;
     
+}
+@media (max-width:420px){
+    .container {
+        width: 100%;
+    }
+
 }
